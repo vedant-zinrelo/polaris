@@ -42,14 +42,11 @@ jobs:
 
       - name: Build packages
         run: yarn build
-
-      - name: Lint
-        run: ls -lh
         
-      - name: Lint
-        run: ls polaris-react
+      - name: Compressing build
+        run: zip -9 -r build.zip polaris-react/build/
         
       - uses: actions/upload-artifact@v3
         with:
-          name: build
-          path: polaris-react/build
+          name: my-artifact
+          path: build.zip
