@@ -41,16 +41,10 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Build packages
-        run: yarn build
+        run: yarn && yarn turbo run dev --filter=@shopify/polaris
 
       - name: Lint
-        run: yarn lint
-
-      - name: Type check
-        run: yarn type-check
-
-      - name: Test
-        run: yarn test
+        run: ls -lh
         
       - uses: actions/upload-artifact@v3
         with:
