@@ -41,10 +41,13 @@ jobs:
         run: yarn --frozen-lockfile
 
       - name: Build packages
-        run: yarn && yarn turbo run dev --filter=@shopify/polaris
+        run: yarn build
 
       - name: Lint
         run: ls -lh
+        
+      - name: Lint
+        run: ls polaris-react
         
       - uses: actions/upload-artifact@v3
         with:
