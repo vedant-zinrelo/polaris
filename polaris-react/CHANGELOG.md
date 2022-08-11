@@ -1,5 +1,14 @@
 # Changelog
 
+## 9.23.1
+
+### Patch Changes
+
+- [#6881](https://github.com/Shopify/polaris/pull/6881) [`1f8950c`](https://github.com/Shopify/polaris/commit/1f8950cdceb391a2ac899cad8648c1e16aa512ee) Thanks [@alex-page](https://github.com/alex-page)! - Replaced glob with globby
+
+- Updated dependencies [[`1f8950c`](https://github.com/Shopify/polaris/commit/1f8950cdceb391a2ac899cad8648c1e16aa512ee)]:
+  - @shopify/polaris-icons@5.3.1
+
 ## 9.23.0
 
 ### Minor Changes
